@@ -9,7 +9,7 @@ cd justpath.rs
 cargo run
 ```
 
-Output on Github (February 2026):
+Sample output on Github Codespaces (February 2026):
 
 ```
  1 /home/codespace/.cargo/bin (unique)

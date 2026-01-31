@@ -25,6 +25,13 @@ impl Directory {
             .count()
     }
 
+    fn occurrences_resolved(&self, directories: &[Directory]) -> usize {
+        directories
+            .iter()
+            .filter(|dir| dir.canonical == self.canonical)
+            .count()
+    }
+
     fn is_pointer(&self) -> bool {
         match &self.canonical {
             Some(canonical) => canonical != &self.original,
@@ -35,7 +42,7 @@ impl Directory {
 
 fn print_directories(directories: &[Directory]) {
     for (i, dir) in directories.iter().enumerate() {
-        let count = dir.occurrences(directories);
+        let count = dir.occurrences_resolved(directories);
         let number = format!("{:2}", i + 1).dimmed();
         let path_str = dir.original.display().to_string();
 
