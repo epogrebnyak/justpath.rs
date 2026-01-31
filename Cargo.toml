@@ -1,0 +1,11 @@
+[package]
+name = "justpath"
+version = "0.0.1"
+edition = "2024"
+
+[dependencies]
+colored = "3.1.1"
+
+[[bin]]
+name = "justpath"
+path = "main.rs"
