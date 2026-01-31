@@ -57,7 +57,7 @@ fn print_directories(directories: &[Directory]) {
                 print!("{}", "(unique)".green().dimmed());
             }
 
-            // Print canonical arrow on the same line if pointer
+            // Print canonical arrow on the same line if symlink
             if dir.is_pointer() {
                 if let Some(canonical) = &dir.canonical {
                     print!(" {}", format!("→ {}", canonical.display()).dimmed());
