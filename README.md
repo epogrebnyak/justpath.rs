@@ -33,4 +33,4 @@ $ cargo run -q | grep missing
 
 ## Previous art
 
-<https://github.com/epogrebnyak/justpath> (Python)
+[Python version](https://github.com/epogrebnyak/justpath) is richer in flags until I learn [clap](https://docs.rs/clap/latest/clap/).
