@@ -1,15 +1,18 @@
 # justpath.rs
-What's on your PATH?
 
-How to run:
+What's on your `PATH`? 
 
-```
+## How to run
+
+```bash
 git clone https://github.com/epogrebnyak/justpath.rs.git
 cd justpath.rs
 cargo run
 ```
 
-Sample output on Github Codespaces (February 2026):
+## Sample output 
+
+Github Codespaces (February 2026) `PATH` has quite a few duplicates and some missing directories:
 
 ```
  1 /home/codespace/.cargo/bin (unique)
@@ -55,3 +58,7 @@ Sample output on Github Codespaces (February 2026):
 41 /home/codespace/.dotnet/tools (missing)
 42 /usr/local/rvm/bin (unique)
 ```
+
+## Previous art
+
+<https://github.com/epogrebnyak/justpath> (Python)
